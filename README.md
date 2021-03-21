@@ -7,12 +7,12 @@ Monitor the life and death of your site using PING, PORT, HTML, and SMTP protoco
 ## Getting started
 
 ```bash
-cp -a site_alive_monitor.sh path/to/.
-cp -a site_alive_monitor.conf.sample path/to/my_site_alive_monitor.conf
+# cp -a site_alive_monitor.sh path/to/.
+# cp -a site_alive_monitor.conf.sample path/to/my_site_alive_monitor.conf
 
-vi path/to/my_site_alive_monitor.conf
+# vi path/to/my_site_alive_monitor.conf
 
-path/to/site_alive_monitor.sh path/to/my_site_alive_monitor.conf
+# path/to/site_alive_monitor.sh path/to/my_site_alive_monitor.conf
 ```
 
 ## License
