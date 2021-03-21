@@ -1,6 +1,7 @@
 # Site Alive Monitor Script.
 
 Site Alive Monitor Script is written in Bash shell script.
+
 Monitor the life and death of your site using PING, PORT, HTML, and SMTP protocols.
 
 ## Getting started
