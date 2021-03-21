@@ -37,8 +37,6 @@ function send_mail() {
 	rcptto4=$9
 	rcptto5=${10}
 	
-	srvname=`hostname`
-	
 	/bin/echo -ne "from: ""$mailfrom""\n" > /dev/shm/"$id".mail
 	
 	/bin/echo -ne "to: ""$rcptto""\n" >> /dev/shm/"$id".mail
