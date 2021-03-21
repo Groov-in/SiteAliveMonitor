@@ -1,0 +1,122 @@
+# MIT License
+#
+# Copyright (c) 2021 Groov-in
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+
+####################################################################################################
+# Site Alive Monitor Script Setting Sample.
+#
+
+####################################################################################################
+# Universally Unique Identifier.
+#   Type uuidgen in the console, copy the UUID and paste it here.
+#   e.g. 282ae3eb-e8c2-4fa4-8594-eef2e88ec17a
+#
+UUID="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
+####################################################################################################
+# Check Type.
+#   PING or PORT or HTML or SMTP
+#
+#CHECK_TYPE="SMTP"
+#CHECK_TYPE="PING"
+#CHECK_TYPE="PORT"
+CHECK_TYPE="HTML"
+
+####################################################################################################
+# Target URL.
+#   Check Type: HTML
+#   e.g. https://example.com
+#
+TARGET_URL="https://groov-in.github.io:443/SiteAliveMonitor/"
+
+####################################################################################################
+# Basic Authentication.
+#   Check Type: HTML
+#   e.g. user:password
+#
+#BASIC_AUTH="user:password"
+
+####################################################################################################
+# Insecure option.
+#   Check Type: HTML
+#   disable certificate verification.
+#
+#INSECURE="Y"
+
+####################################################################################################
+# Target Host Name or IP ADDRESS.
+#   Check Type: PING or PORT or SMTP
+#   e.g. exsample.com or 172.16.0.2
+#
+#TARGET_HOST="localhost"
+#TARGET_HOST="127.0.0.1"
+
+####################################################################################################
+# Target Port.
+#   Check Type: PORT or SMTP
+#   e.g. 22 25
+#
+#TARGET_PORT="22"
+
+####################################################################################################
+# Try count.
+#   Number of trials. The default is 3 times.
+#
+#TRY_COUNT=3
+
+####################################################################################################
+# From Mail Address.
+#   Sender's email address.
+#
+MAIL_FROM="sender@example.com"
+
+####################################################################################################
+# To Mail Address.
+#   Recipient's email address.
+#
+RCPT_TO="recipient@example.com"
+#RCPT_TO_2="" # option address 2
+#RCPT_TO_3="" # option address 3
+#RCPT_TO_4="" # option address 4
+#RCPT_TO_5="" # option address 5
+
+####################################################################################################
+# RECOVERY MAIL.
+#
+#   Mail Subject.
+#
+RECOVERY_MAIL_SUBJECT="Recovery notification from Site Alive Monitor"
+#
+#   Mail Body.
+#
+RECOVERY_MAIL_BODY="Task Name: HTML Check\nType: ${CHECK_TYPE}\nURL: ${TARGET_URL}\nResult: Success"
+
+####################################################################################################
+# ERROR MAIL.
+#
+#   Mail Subject.
+#
+ERROR_MAIL_SUBJECT="Error notification from Site Alive Monitor"
+#
+#   Mail Body.
+#
+ERROR_MAIL_BODY="Task Name: HTML Check\nType: ${CHECK_TYPE}\nURL: ${TARGET_URL}\nResult: Fail"
