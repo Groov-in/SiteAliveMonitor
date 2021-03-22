@@ -25,6 +25,8 @@ https://groov-in.github.io/SiteAliveMonitor/
 crontab examples: 
 Site check every 5 minutes. 
 */5 * * * * root path/to/site_alive_monitor.sh path/to/my_site_alive_monitor.conf
+*/5 * * * * root path/to/site_alive_monitor.sh path/to/my_html_site_alive_monitor.conf
+*/5 * * * * root path/to/site_alive_monitor.sh path/to/my_smtp_site_alive_monitor.conf
 ```
 
 ## License
