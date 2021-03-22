@@ -20,8 +20,8 @@ https://groov-in.github.io/SiteAliveMonitor/
 
 # path/to/site_alive_monitor.sh path/to/my_site_alive_monitor.conf
 ```
-crontab examples:
-Site check every 5 minutes.
+crontab examples: 
+Site check every 5 minutes. 
 */5 * * * * root path/to/site_alive_monitor.sh path/to/my_site_alive_monitor.conf
 
 ## License
